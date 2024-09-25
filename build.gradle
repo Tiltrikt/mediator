@@ -1,0 +1,29 @@
+//file:noinspection GroovyAssignabilityCheck
+plugins {
+    id 'idea'
+    id 'java-library'
+    alias libs.plugins.springframework.boot
+    alias libs.plugins.spring.dependency.management
+}
+
+dependencies {
+    annotationProcessor libs.projectlombok.lombok
+
+    compileOnlyApi libs.projectlombok.lombok
+    compileOnlyApi libs.jetbrains.annotations
+
+    api libs.springframework.spring.boot.starter
+}
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+
+tasks.withType(JavaCompile).configureEach {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+group = 'dev.tiltrikt'

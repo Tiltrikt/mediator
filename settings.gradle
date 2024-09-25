@@ -1,0 +1,13 @@
+//file:noinspection GroovyAssignabilityCheck
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+    versionCatalogs {
+        libs {
+            from(files("libs.versions.toml"))
+        }
+    }
+}
+
+rootProject.name = 'mediator'
