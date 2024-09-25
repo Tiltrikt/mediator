@@ -1,9 +1,9 @@
-package dev.tiltrikt.mediator;
+package dev.tiltrikt.mediator.mediator;
 
-import org.jetbrains.annotations.NotNull;
 import dev.tiltrikt.mediator.exception.CommandException;
+import org.jetbrains.annotations.NotNull;
 
-public interface Mediatr {
+public interface Mediator {
 
   <T, R> @NotNull R dispatch(@NotNull T command, @NotNull Class<R> responseClass) throws CommandException;
 

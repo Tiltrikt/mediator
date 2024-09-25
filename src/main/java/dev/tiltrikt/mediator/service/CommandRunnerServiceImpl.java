@@ -1,13 +1,13 @@
 package dev.tiltrikt.mediator.service;
 
+import dev.tiltrikt.mediator.exception.CommandException;
+import dev.tiltrikt.mediator.model.CommandRunner;
+import dev.tiltrikt.mediator.repository.CommandRunnerRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
-import dev.tiltrikt.mediator.exception.CommandException;
-import dev.tiltrikt.mediator.model.CommandRunner;
-import dev.tiltrikt.mediator.repository.CommandRunnerRepository;
 
 @Component
 @RequiredArgsConstructor

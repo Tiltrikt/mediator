@@ -1,8 +1,8 @@
 package dev.tiltrikt.mediator.service;
 
-import org.jetbrains.annotations.NotNull;
 import dev.tiltrikt.mediator.exception.CommandException;
 import dev.tiltrikt.mediator.model.CommandRunner;
+import org.jetbrains.annotations.NotNull;
 
 public interface CommandRunnerService {
 

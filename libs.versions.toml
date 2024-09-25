@@ -7,13 +7,18 @@ spring-dependency-management = '1.1.4'
 projectlombok-lombok = '1.18.30'
 jetbrains-annotations = '24.1.0'
 
+reflections-reflections = '0.10.2'
+
 [libraries]
 # Spring
 springframework-spring-boot-starter = { module = 'org.springframework.boot:spring-boot-starter' }
+springframework-spring-boot-starter-aop = { module = 'org.springframework.boot:spring-boot-starter-aop' }
 
 # Utility
 projectlombok-lombok = { module = 'org.projectlombok:lombok', version.ref = 'projectlombok-lombok' }
 jetbrains-annotations = { module = 'org.jetbrains:annotations', version.ref = 'jetbrains-annotations' }
+
+reflections-reflections = { module = 'org.reflections:reflections', version.ref = 'reflections-reflections'}
 
 [plugins]
 # Spring plugins

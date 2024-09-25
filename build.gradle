@@ -12,7 +12,10 @@ dependencies {
     compileOnlyApi libs.projectlombok.lombok
     compileOnlyApi libs.jetbrains.annotations
 
-    api libs.springframework.spring.boot.starter
+    implementation libs.springframework.spring.boot.starter
+    implementation libs.springframework.spring.boot.starter.aop
+    implementation libs.reflections.reflections
+
 }
 
 java {

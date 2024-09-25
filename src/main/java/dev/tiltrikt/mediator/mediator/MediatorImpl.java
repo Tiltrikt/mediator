@@ -1,20 +1,20 @@
-package dev.tiltrikt.mediator;
+package dev.tiltrikt.mediator.mediator;
 
-import lombok.AccessLevel;
-import lombok.RequiredArgsConstructor;
-import lombok.experimental.FieldDefaults;
-import org.jetbrains.annotations.NotNull;
-import org.springframework.stereotype.Component;
 import dev.tiltrikt.mediator.exception.CommandException;
 import dev.tiltrikt.mediator.model.CommandHandler;
 import dev.tiltrikt.mediator.model.CommandRunner;
 import dev.tiltrikt.mediator.service.CommandHandlerService;
 import dev.tiltrikt.mediator.service.CommandRunnerService;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
+import org.jetbrains.annotations.NotNull;
+import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
-public class MediatrImpl implements Mediatr {
+public class MediatorImpl implements Mediator {
 
   @NotNull CommandRunnerService commandRunnerService;
 
